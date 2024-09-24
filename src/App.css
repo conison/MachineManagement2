@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  height: 100vh; /* Make sure the body takes full height */
+}
+
+/* Header Styles */
+.header {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  position: sticky;
+  top: 0; /* Stick the header to the top */
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+/* Main Content Styles */
+.main-content {
+  display: flex;
+  flex: 1; /* Allow the main content to take available space */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  background: #0056b3;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Make sidebar full width */
+}
+
+.sidebar li {
+  width: 100%; /* Make sidebar items full width */
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center; /* Center align text */
+}
+
+.sidebar li:hover {
+  background: #003f7f;
+}
+
+/* Content Area Styles */
+.content-area {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Machine Details */
+.machine-details {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Space out elements */
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.machine-details p {
+  margin: 0; /* Remove default margin for paragraphs */
+  padding-right: 20px; /* Space between details */
+}
+
+/* Table Styles */
+.grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.grid th,
+.grid td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.grid th {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Button Styles */
+button {
+  background: #1d8cf8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-right: 5px; /* Space between buttons */
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Event Creation Section */
+.event-creation {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Frequency Picker */
+.frequency-picker {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.action-sequence {
+  margin: 10px 0;
+}
+
+/* Settings and Logs */
+.settings,
+.logs {
+  margin-top: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Time */
+.specific-time {
+  margin-top: 10px;
+}
+
+/* Additional Styles */
+h1,
+h2,
+h3,
+h4 {
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px;
+  }
+
+  .grid {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px; /* Adjust header font size */
+  }
+
+  button {
+    padding: 8px 12px; /* Smaller button padding */
+  }
+}
+
+/* Tab Styles */
+.tab-list {
+  list-style-type: none;
+  display: flex; /* Arrange tabs in a horizontal line */
+  padding: 0;
+  margin: 0;
+}
+
+.tab-list li {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #007bff; /* Background color for tabs */
+  color: white; /* Text color for tabs */
+  margin-right: 5px; /* Space between tabs */
+  border-radius: 4px; /* Rounded corners */
+  transition: background 0.3s; /* Smooth transition on hover */
+}
+
+.tab-list li.active {
+  background-color: #0056b3; /* Active tab background */
+}
+
+.tab-list li:hover {
+  background-color: #003f7f; /* Hover effect */
+}
+
+/* Machine Details Colors */
+.machine-details p {
+  margin: 0;
+  padding-right: 20px;
+}
